@@ -14,14 +14,5 @@ class Estudiante(Organismo):
         else:
             print("el dato no es un valor booleano")
     
-    def agregar_habilidad(self, habilidad):
-        if habilidad not in self.habilidades:
-            self.habilidades.append(habilidad)
-        else:
-            print(f"La habilidad '{habilidad}' ya está registrada.")
-    
-    def get_habilidades(self):
-        return self.habilidades
-    
     def describirse(self):
         print(f"Estudiante: {self.get_nombre()}, Habilidades: {self.habilidades}, Pertenece a grupo: {self.Pertenece_a_grupo}")
